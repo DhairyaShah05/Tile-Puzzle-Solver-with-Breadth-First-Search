@@ -1,14 +1,14 @@
 
 # Tile Puzzle Solver using Breadth-First Search
 
-This project implements a solver for the classic 8-tile puzzle using the Breadth-First Search (BFS) algorithm. It also includes an animation script to visualize the steps taken to solve the puzzle. The project consists of two main Python files: `project1.py` and `Animate.py`.
+This project implements a solver for the classic 8-tile puzzle using the Breadth-First Search (BFS) algorithm. It also includes an animation script to visualize the steps taken to solve the puzzle. The project consists of two main Python files: `solver.py` and `Animate.py`.
 
 ## Table of Contents
 - [Introduction](#introduction)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [project1.py](#project1py)
+  - [solver.py](#solverpy)
   - [Animate.py](#animatepy)
 - [How It Works](#how-it-works)
 - [Example](#example)
@@ -40,7 +40,7 @@ In this project, we use the Breadth-First Search algorithm to find the shortest 
 
 ## Usage
 
-### project1.py
+### solver.py
 This script contains functions to move the blank tile and to identify its location. It simulates the movements of the tiles based on user-defined actions.
 
 #### Key Functions:
@@ -52,7 +52,7 @@ This script contains functions to move the blank tile and to identify its locati
 
 To run this script, use:
 ```bash
-python project1.py
+python solver.py
 ```
 
 ### Animate.py
@@ -71,7 +71,7 @@ python Animate.py
 ```
 
 ## How It Works
-1. **Breadth-First Search (BFS) Algorithm**: `project1.py` uses the BFS algorithm to explore all possible configurations of the puzzle until it finds the solution.
+1. **Breadth-First Search (BFS) Algorithm**: `solver.py` uses the BFS algorithm to explore all possible configurations of the puzzle until it finds the solution.
 2. **Action Functions**: These functions (`action_move_left`, `action_move_right`, etc.) generate new states by moving the blank tile in the specified direction.
 3. **Animation**: `Animate.py` reads the solution steps from `nodePath.txt` and animates the transitions between states, providing a visual representation of the solving process.
 
@@ -91,7 +91,7 @@ python Animate.py
 ```
 
 ### Output:
-After running `project1.py`, the solution will be printed in the console. Running `Animate.py` will visualize the sequence of moves.
+After running `solver.py`, the solution will be printed in the console. Running `Animate.py` will visualize the sequence of moves.
 
 ## Acknowledgments
 - This project was inspired by the classic 8-tile puzzle problem.
